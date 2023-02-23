@@ -1,0 +1,126 @@
+Using 4 GPUs for training.
+----------------- Configs ---------------
+n_iter=8000 decay_step=50 p=100 n=50000 fake_size=50000 n_iter_g=1 n_iter_d=5 display_num=100 seed=0 loc=0 decay_gamma=0.95 lambda_d=0.025 lr_d=0.0005 lr_g=0.005 eps=0.2 loss=hinge Q=far_cluster cov=ar out_dir=output no_loc=False use_sample_cov=False no_warm_up=False no_norm_clip=False
+
+[Non-default Values]: p=100 seed=0 eps=0.2 out_dir=output
+----------------- Configs End -------------------
+
+Discriminator warm-up training...
+
+Epoch 0000 | Sigma_err: 12.95816 | mu_err: 5.98861 | D_loss: 2.0 | D_pen: 0.00178 | G_loss: 2.0
+Epoch 0080 | Sigma_err: 17.31639 | mu_err: 4.43894 | D_loss: 1.75882 | D_pen: 0.00675 | G_loss: 1.83571
+Epoch 0160 | Sigma_err: 19.4844 | mu_err: 3.89227 | D_loss: 1.99893 | D_pen: 0.00618 | G_loss: 1.99865
+Epoch 0240 | Sigma_err: 18.81355 | mu_err: 3.84959 | D_loss: 1.99943 | D_pen: 0.00515 | G_loss: 1.99965
+Epoch 0320 | Sigma_err: 18.29297 | mu_err: 3.81703 | D_loss: 1.99972 | D_pen: 0.00427 | G_loss: 1.99981
+Epoch 0400 | Sigma_err: 17.17722 | mu_err: 3.94421 | D_loss: 1.97888 | D_pen: 0.00447 | G_loss: 1.95296
+Epoch 0480 | Sigma_err: 16.63336 | mu_err: 1.70583 | D_loss: 1.99895 | D_pen: 0.00569 | G_loss: 1.99843
+Epoch 0560 | Sigma_err: 15.8861 | mu_err: 1.66438 | D_loss: 1.99967 | D_pen: 0.00495 | G_loss: 1.99938
+Epoch 0640 | Sigma_err: 15.46366 | mu_err: 1.64586 | D_loss: 1.99954 | D_pen: 0.00427 | G_loss: 1.99956
+Epoch 0720 | Sigma_err: 15.20701 | mu_err: 1.63568 | D_loss: 1.99974 | D_pen: 0.00365 | G_loss: 1.99953
+Epoch 0800 | Sigma_err: 14.9681 | mu_err: 1.62586 | D_loss: 1.99987 | D_pen: 0.0031 | G_loss: 1.9998
+Epoch 0880 | Sigma_err: 14.79986 | mu_err: 1.61983 | D_loss: 1.99976 | D_pen: 0.00259 | G_loss: 1.99986
+Epoch 0960 | Sigma_err: 14.64976 | mu_err: 1.61354 | D_loss: 1.99989 | D_pen: 0.00215 | G_loss: 1.99991
+Epoch 1040 | Sigma_err: 14.36458 | mu_err: 1.64499 | D_loss: 1.99987 | D_pen: 0.00196 | G_loss: 1.99989
+Epoch 1120 | Sigma_err: 14.01142 | mu_err: 1.65739 | D_loss: 1.99982 | D_pen: 0.00195 | G_loss: 1.9997
+Epoch 1200 | Sigma_err: 13.72326 | mu_err: 1.66074 | D_loss: 1.99977 | D_pen: 0.00181 | G_loss: 1.99982
+Epoch 1280 | Sigma_err: 13.48637 | mu_err: 1.7768 | D_loss: 1.99974 | D_pen: 0.00195 | G_loss: 1.99978
+Epoch 1360 | Sigma_err: 13.01378 | mu_err: 1.7586 | D_loss: 1.99944 | D_pen: 0.00203 | G_loss: 1.99894
+Epoch 1440 | Sigma_err: 12.16808 | mu_err: 1.72281 | D_loss: 1.99738 | D_pen: 0.00227 | G_loss: 1.99728
+Epoch 1520 | Sigma_err: 7.17395 | mu_err: 0.25405 | D_loss: 1.34875 | D_pen: 0.00313 | G_loss: 1.39331
+Epoch 1600 | Sigma_err: 6.90158 | mu_err: 0.01213 | D_loss: 1.61051 | D_pen: 0.00318 | G_loss: 1.60938
+Epoch 1680 | Sigma_err: 5.9635 | mu_err: 0.009 | D_loss: 1.28646 | D_pen: 0.00332 | G_loss: 1.31997
+Epoch 1760 | Sigma_err: 5.5573 | mu_err: 0.00873 | D_loss: 1.4925 | D_pen: 0.00339 | G_loss: 1.51183
+Epoch 1840 | Sigma_err: 4.98344 | mu_err: 0.00816 | D_loss: 1.11621 | D_pen: 0.00345 | G_loss: 1.15859
+Epoch 1920 | Sigma_err: 4.3628 | mu_err: 0.00626 | D_loss: 1.41378 | D_pen: 0.00348 | G_loss: 1.4394
+Epoch 2000 | Sigma_err: 3.91118 | mu_err: 0.00322 | D_loss: 1.03541 | D_pen: 0.00351 | G_loss: 1.06889
+Epoch 2080 | Sigma_err: 3.47432 | mu_err: 0.0043 | D_loss: 1.00731 | D_pen: 0.00354 | G_loss: 1.03284
+Epoch 2160 | Sigma_err: 3.20451 | mu_err: 0.0051 | D_loss: 1.06257 | D_pen: 0.00356 | G_loss: 1.07325
+Epoch 2240 | Sigma_err: 2.85674 | mu_err: 0.0038 | D_loss: 0.94108 | D_pen: 0.00364 | G_loss: 0.95107
+Epoch 2320 | Sigma_err: 2.52252 | mu_err: 0.00369 | D_loss: 1.10067 | D_pen: 0.00372 | G_loss: 1.11866
+Epoch 2400 | Sigma_err: 2.2595 | mu_err: 0.00376 | D_loss: 0.69293 | D_pen: 0.0038 | G_loss: 0.6911
+Epoch 2480 | Sigma_err: 2.05813 | mu_err: 0.00259 | D_loss: 1.03078 | D_pen: 0.00389 | G_loss: 1.0361
+Epoch 2560 | Sigma_err: 2.08535 | mu_err: 0.00284 | D_loss: 0.73794 | D_pen: 0.00397 | G_loss: 0.74855
+Epoch 2640 | Sigma_err: 1.55573 | mu_err: 0.00482 | D_loss: 0.92138 | D_pen: 0.00411 | G_loss: 0.92875
+Epoch 2720 | Sigma_err: 1.7128 | mu_err: 0.00273 | D_loss: 0.61709 | D_pen: 0.0042 | G_loss: 0.62508
+Epoch 2800 | Sigma_err: 1.57455 | mu_err: 0.0025 | D_loss: 0.75975 | D_pen: 0.00428 | G_loss: 0.75732
+Epoch 2880 | Sigma_err: 1.44976 | mu_err: 0.00382 | D_loss: 0.71754 | D_pen: 0.00439 | G_loss: 0.72427
+Epoch 2960 | Sigma_err: 1.14525 | mu_err: 0.0027 | D_loss: 0.75082 | D_pen: 0.00453 | G_loss: 0.75296
+Epoch 3040 | Sigma_err: 1.25946 | mu_err: 0.00287 | D_loss: 0.71266 | D_pen: 0.00468 | G_loss: 0.7153
+Epoch 3120 | Sigma_err: 0.94823 | mu_err: 0.00291 | D_loss: 0.68948 | D_pen: 0.00482 | G_loss: 0.69621
+Epoch 3200 | Sigma_err: 1.01425 | mu_err: 0.00298 | D_loss: 0.72384 | D_pen: 0.00499 | G_loss: 0.7286
+Epoch 3280 | Sigma_err: 0.90165 | mu_err: 0.00254 | D_loss: 0.65785 | D_pen: 0.00512 | G_loss: 0.66715
+Epoch 3360 | Sigma_err: 1.03481 | mu_err: 0.00265 | D_loss: 0.73764 | D_pen: 0.00523 | G_loss: 0.74336
+Epoch 3440 | Sigma_err: 0.80339 | mu_err: 0.00277 | D_loss: 0.67124 | D_pen: 0.00534 | G_loss: 0.66823
+Epoch 3520 | Sigma_err: 0.91501 | mu_err: 0.00296 | D_loss: 0.67949 | D_pen: 0.00545 | G_loss: 0.68455
+Epoch 3600 | Sigma_err: 0.79319 | mu_err: 0.00255 | D_loss: 0.67954 | D_pen: 0.00555 | G_loss: 0.68282
+Epoch 3680 | Sigma_err: 0.72907 | mu_err: 0.00243 | D_loss: 0.67658 | D_pen: 0.00564 | G_loss: 0.67368
+Epoch 3760 | Sigma_err: 0.73431 | mu_err: 0.00273 | D_loss: 0.6744 | D_pen: 0.00573 | G_loss: 0.67905
+Epoch 3840 | Sigma_err: 0.66945 | mu_err: 0.00283 | D_loss: 0.68897 | D_pen: 0.00581 | G_loss: 0.68057
+Epoch 3920 | Sigma_err: 0.63101 | mu_err: 0.00277 | D_loss: 0.67434 | D_pen: 0.00589 | G_loss: 0.67499
+Epoch 4000 | Sigma_err: 0.6248 | mu_err: 0.00258 | D_loss: 0.6791 | D_pen: 0.00596 | G_loss: 0.6824
+Epoch 4080 | Sigma_err: 0.58375 | mu_err: 0.00277 | D_loss: 0.68519 | D_pen: 0.00602 | G_loss: 0.68207
+Epoch 4160 | Sigma_err: 0.55962 | mu_err: 0.00282 | D_loss: 0.68756 | D_pen: 0.00607 | G_loss: 0.67976
+Epoch 4240 | Sigma_err: 0.55409 | mu_err: 0.00287 | D_loss: 0.6778 | D_pen: 0.00613 | G_loss: 0.68232
+Epoch 4320 | Sigma_err: 0.54409 | mu_err: 0.00279 | D_loss: 0.68626 | D_pen: 0.00617 | G_loss: 0.69163
+Epoch 4400 | Sigma_err: 0.52876 | mu_err: 0.00274 | D_loss: 0.69051 | D_pen: 0.00622 | G_loss: 0.68154
+Epoch 4480 | Sigma_err: 0.52183 | mu_err: 0.00277 | D_loss: 0.68732 | D_pen: 0.00626 | G_loss: 0.68313
+Epoch 4560 | Sigma_err: 0.5179 | mu_err: 0.00274 | D_loss: 0.68878 | D_pen: 0.0063 | G_loss: 0.68668
+Epoch 4640 | Sigma_err: 0.50934 | mu_err: 0.00279 | D_loss: 0.68939 | D_pen: 0.00634 | G_loss: 0.6979
+Epoch 4720 | Sigma_err: 0.50723 | mu_err: 0.00285 | D_loss: 0.68751 | D_pen: 0.00637 | G_loss: 0.68793
+Epoch 4800 | Sigma_err: 0.50816 | mu_err: 0.0029 | D_loss: 0.69262 | D_pen: 0.00639 | G_loss: 0.68908
+Epoch 4880 | Sigma_err: 0.50662 | mu_err: 0.00291 | D_loss: 0.70121 | D_pen: 0.00642 | G_loss: 0.69301
+Epoch 4960 | Sigma_err: 0.50532 | mu_err: 0.00285 | D_loss: 0.69269 | D_pen: 0.00645 | G_loss: 0.69319
+Epoch 5040 | Sigma_err: 0.50459 | mu_err: 0.00283 | D_loss: 0.69425 | D_pen: 0.00647 | G_loss: 0.69721
+Epoch 5120 | Sigma_err: 0.50287 | mu_err: 0.00285 | D_loss: 0.69607 | D_pen: 0.00649 | G_loss: 0.69756
+Epoch 5200 | Sigma_err: 0.50088 | mu_err: 0.0029 | D_loss: 0.69689 | D_pen: 0.00651 | G_loss: 0.69097
+Epoch 5280 | Sigma_err: 0.50026 | mu_err: 0.00294 | D_loss: 0.69953 | D_pen: 0.00653 | G_loss: 0.69211
+Epoch 5360 | Sigma_err: 0.50012 | mu_err: 0.00293 | D_loss: 0.69668 | D_pen: 0.00654 | G_loss: 0.69837
+Epoch 5440 | Sigma_err: 0.50017 | mu_err: 0.00296 | D_loss: 0.6948 | D_pen: 0.00656 | G_loss: 0.69762
+Epoch 5520 | Sigma_err: 0.50006 | mu_err: 0.00297 | D_loss: 0.6983 | D_pen: 0.00657 | G_loss: 0.69444
+Epoch 5600 | Sigma_err: 0.49992 | mu_err: 0.00299 | D_loss: 0.70122 | D_pen: 0.00658 | G_loss: 0.69739
+Epoch 5680 | Sigma_err: 0.5 | mu_err: 0.003 | D_loss: 0.69574 | D_pen: 0.00659 | G_loss: 0.69606
+Epoch 5760 | Sigma_err: 0.49978 | mu_err: 0.00301 | D_loss: 0.70517 | D_pen: 0.0066 | G_loss: 0.70136
+Epoch 5840 | Sigma_err: 0.49968 | mu_err: 0.00301 | D_loss: 0.70187 | D_pen: 0.00661 | G_loss: 0.6924
+Epoch 5920 | Sigma_err: 0.49978 | mu_err: 0.00298 | D_loss: 0.69978 | D_pen: 0.00662 | G_loss: 0.69863
+Epoch 6000 | Sigma_err: 0.49965 | mu_err: 0.00295 | D_loss: 0.697 | D_pen: 0.00663 | G_loss: 0.70376
+Epoch 6080 | Sigma_err: 0.49934 | mu_err: 0.00294 | D_loss: 0.69993 | D_pen: 0.00664 | G_loss: 0.70245
+Epoch 6160 | Sigma_err: 0.49886 | mu_err: 0.00294 | D_loss: 0.69911 | D_pen: 0.00664 | G_loss: 0.70381
+Epoch 6240 | Sigma_err: 0.4987 | mu_err: 0.00294 | D_loss: 0.70176 | D_pen: 0.00665 | G_loss: 0.70188
+Epoch 6320 | Sigma_err: 0.49851 | mu_err: 0.00294 | D_loss: 0.70338 | D_pen: 0.00665 | G_loss: 0.70465
+Epoch 6400 | Sigma_err: 0.49845 | mu_err: 0.00293 | D_loss: 0.70345 | D_pen: 0.00666 | G_loss: 0.70877
+Epoch 6480 | Sigma_err: 0.49837 | mu_err: 0.00293 | D_loss: 0.70233 | D_pen: 0.00666 | G_loss: 0.70158
+Epoch 6560 | Sigma_err: 0.49837 | mu_err: 0.00293 | D_loss: 0.69475 | D_pen: 0.00667 | G_loss: 0.69874
+Epoch 6640 | Sigma_err: 0.49841 | mu_err: 0.00293 | D_loss: 0.69738 | D_pen: 0.00667 | G_loss: 0.70114
+Epoch 6720 | Sigma_err: 0.4983 | mu_err: 0.00293 | D_loss: 0.69792 | D_pen: 0.00668 | G_loss: 0.69983
+Epoch 6800 | Sigma_err: 0.49828 | mu_err: 0.00293 | D_loss: 0.7039 | D_pen: 0.00668 | G_loss: 0.70431
+Epoch 6880 | Sigma_err: 0.4982 | mu_err: 0.00294 | D_loss: 0.69738 | D_pen: 0.00668 | G_loss: 0.70449
+Epoch 6960 | Sigma_err: 0.49817 | mu_err: 0.00294 | D_loss: 0.70011 | D_pen: 0.00669 | G_loss: 0.70344
+Epoch 7040 | Sigma_err: 0.49825 | mu_err: 0.00294 | D_loss: 0.69901 | D_pen: 0.00669 | G_loss: 0.69751
+Epoch 7120 | Sigma_err: 0.49824 | mu_err: 0.00294 | D_loss: 0.70106 | D_pen: 0.00669 | G_loss: 0.70401
+Epoch 7200 | Sigma_err: 0.49825 | mu_err: 0.00294 | D_loss: 0.70339 | D_pen: 0.00669 | G_loss: 0.70289
+Epoch 7280 | Sigma_err: 0.4983 | mu_err: 0.00295 | D_loss: 0.70604 | D_pen: 0.0067 | G_loss: 0.70366
+Epoch 7360 | Sigma_err: 0.49833 | mu_err: 0.00296 | D_loss: 0.69992 | D_pen: 0.0067 | G_loss: 0.70505
+Epoch 7440 | Sigma_err: 0.49831 | mu_err: 0.00297 | D_loss: 0.70175 | D_pen: 0.0067 | G_loss: 0.7002
+Epoch 7520 | Sigma_err: 0.49833 | mu_err: 0.00297 | D_loss: 0.70436 | D_pen: 0.0067 | G_loss: 0.7023
+Epoch 7600 | Sigma_err: 0.49833 | mu_err: 0.00298 | D_loss: 0.699 | D_pen: 0.0067 | G_loss: 0.70737
+Epoch 7680 | Sigma_err: 0.49832 | mu_err: 0.00298 | D_loss: 0.70451 | D_pen: 0.0067 | G_loss: 0.7003
+Epoch 7760 | Sigma_err: 0.49829 | mu_err: 0.00299 | D_loss: 0.70174 | D_pen: 0.00671 | G_loss: 0.70539
+Epoch 7840 | Sigma_err: 0.49827 | mu_err: 0.00299 | D_loss: 0.70594 | D_pen: 0.00671 | G_loss: 0.70321
+Epoch 7920 | Sigma_err: 0.49827 | mu_err: 0.003 | D_loss: 0.70379 | D_pen: 0.00671 | G_loss: 0.70298
+
+||mu_hat - mu||_2: 0.05479574203491211
+||Sigma_hat - Sigma||_F: 0.4982307255268097
+||Sigma_hat - Sigma||_op: 0.13592708110809326
+
+
+-----
+config              NA
+session_info        1.0.0
+spline_gan          NA
+torch               1.13.1
+-----
+Python 3.9.16 (main, Jan 11 2023, 16:05:54) [GCC 11.2.0]
+Linux-5.14.0-1056-oem-x86_64-with-glibc2.31
+-----
+Session information updated at 2023-02-22 23:04
+None
