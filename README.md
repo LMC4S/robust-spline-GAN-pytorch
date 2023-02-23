@@ -15,7 +15,7 @@ tensorboardX==2.6
 torch==1.13.1
 
 # CUDA 
-CUDA Version >= 11.4
+CUDA 11.7
 
 # System
 Ubuntu 20.04.4 LTS (GNU/Linux 5.14.0-1056-oem x86_64)
