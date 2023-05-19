@@ -41,4 +41,4 @@ python train.py --p 100 --n 20000 --eps 0.2 \
 --cuda_id 0 --seed 0 --loss JS \
 --adaptive
 ```
-Above code works for training with p=100 and n=20000 on a single gpu. For other models considered in the paper please make sure the "--adaptive" option is used. See *config.py* for details.
+Above code works for training with p=100 and n=20000 on a single gpu. For other models considered in the paper please make sure that "--adaptive" and "--rand_init" options are used. See *config.py* for details.
