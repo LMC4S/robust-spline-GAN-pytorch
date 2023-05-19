@@ -1,0 +1,80 @@
+Training with CUDA gpu:0
+------------ Configs (after adaptation) --------------------
+--n_iter 375 --decay_step 25 --p 100 --n 20000 --batch_size 1000 --n_iter_g 4 --n_iter_d 20 --display_num 50 --seed 0 --loc 0 --decay_gamma 0.5 --lambda_d 0.025 --lr_d 0.0002 --lr_g 0.001 --eps 0.2 --grad_clip 1 --loss JS --Q far_point --cov ar --out_dir . --pen_type l2 --no_loc False --cpu False --rand_init True --adaptive True --cuda_id 0 --l1 False
+
+[Non-default Values]: n_iter=375 decay_step=25 seed=0 lambda_d=0.025 loss=JS Q=far_point out_dir=. rand_init=True adaptive=True l1=False
+------------ Configs End -----------------------------------
+Epoch 000 | 1.04s | cov: 4582.6348 | loc: 1.9285 | D_loss: 1.3836 | D_pen: 0.0257 | G_loss: 1.3835
+Epoch 007 | 6.86s | cov: 4206.6655 | loc: 0.4845 | D_loss: 0.8036 | D_pen: 0.0678 | G_loss: 0.4751
+Epoch 014 | 7.02s | cov: 2371.5649 | loc: 0.3968 | D_loss: 0.5871 | D_pen: 0.0601 | G_loss: 0.1346
+Epoch 021 | 6.79s | cov: 590.4905 | loc: 0.3452 | D_loss: 0.6863 | D_pen: 0.064 | G_loss: 0.1364
+Epoch 028 | 6.57s | cov: 24.7858 | loc: 0.2144 | D_loss: 0.84 | D_pen: 0.0693 | G_loss: 0.7574
+Epoch 035 | 6.44s | cov: 2.7959 | loc: 0.2168 | D_loss: 0.4476 | D_pen: 0.0839 | G_loss: 0.4322
+Epoch 042 | 6.62s | cov: 2.9619 | loc: 0.2409 | D_loss: 0.5761 | D_pen: 0.0936 | G_loss: 0.5137
+Epoch 049 | 6.50s | cov: 2.593 | loc: 0.2193 | D_loss: 0.5415 | D_pen: 0.0993 | G_loss: 0.4588
+Epoch 056 | 6.67s | cov: 1.4894 | loc: 0.1723 | D_loss: 0.8926 | D_pen: 0.105 | G_loss: 0.8951
+Epoch 063 | 6.60s | cov: 1.3674 | loc: 0.1687 | D_loss: 0.6865 | D_pen: 0.1111 | G_loss: 0.652
+Epoch 070 | 6.66s | cov: 1.5448 | loc: 0.1594 | D_loss: 0.7977 | D_pen: 0.1155 | G_loss: 0.8009
+Epoch 077 | 6.42s | cov: 1.109 | loc: 0.1263 | D_loss: 0.5745 | D_pen: 0.1196 | G_loss: 0.5946
+Epoch 084 | 6.49s | cov: 1.079 | loc: 0.1408 | D_loss: 0.5933 | D_pen: 0.1237 | G_loss: 0.6204
+Epoch 091 | 6.35s | cov: 1.0927 | loc: 0.137 | D_loss: 0.5133 | D_pen: 0.1281 | G_loss: 0.5565
+Epoch 098 | 6.24s | cov: 1.1251 | loc: 0.1413 | D_loss: 0.6802 | D_pen: 0.1309 | G_loss: 0.6838
+Epoch 105 | 6.44s | cov: 0.9674 | loc: 0.1301 | D_loss: 0.6374 | D_pen: 0.1339 | G_loss: 0.6845
+Epoch 112 | 6.25s | cov: 0.9413 | loc: 0.1192 | D_loss: 0.4998 | D_pen: 0.1371 | G_loss: 0.551
+Epoch 119 | 6.85s | cov: 0.992 | loc: 0.12 | D_loss: 0.2968 | D_pen: 0.1402 | G_loss: 0.4752
+Epoch 126 | 7.66s | cov: 0.9152 | loc: 0.1231 | D_loss: 0.833 | D_pen: 0.143 | G_loss: 0.817
+Epoch 133 | 7.32s | cov: 0.9001 | loc: 0.117 | D_loss: 0.1854 | D_pen: 0.1455 | G_loss: 0.289
+Epoch 140 | 7.65s | cov: 0.9261 | loc: 0.1147 | D_loss: 0.8451 | D_pen: 0.1483 | G_loss: 0.8558
+Epoch 147 | 6.73s | cov: 0.9078 | loc: 0.117 | D_loss: 0.4533 | D_pen: 0.1507 | G_loss: 0.4301
+Epoch 154 | 6.59s | cov: 0.8964 | loc: 0.1181 | D_loss: 0.4535 | D_pen: 0.1526 | G_loss: 0.4464
+Epoch 161 | 6.44s | cov: 0.8863 | loc: 0.1185 | D_loss: 0.4219 | D_pen: 0.155 | G_loss: 0.4229
+Epoch 168 | 6.58s | cov: 0.8757 | loc: 0.1212 | D_loss: 0.7254 | D_pen: 0.1566 | G_loss: 0.7363
+Epoch 175 | 6.52s | cov: 0.8807 | loc: 0.1195 | D_loss: 0.3768 | D_pen: 0.1586 | G_loss: 0.5361
+Epoch 182 | 7.35s | cov: 0.881 | loc: 0.1162 | D_loss: 0.7482 | D_pen: 0.1607 | G_loss: 0.8056
+Epoch 189 | 7.05s | cov: 0.8756 | loc: 0.1174 | D_loss: 0.0511 | D_pen: 0.1626 | G_loss: 0.1237
+Epoch 196 | 7.31s | cov: 0.8839 | loc: 0.1171 | D_loss: 0.8735 | D_pen: 0.1636 | G_loss: 0.8422
+Epoch 203 | 7.06s | cov: 0.8837 | loc: 0.1194 | D_loss: 0.5962 | D_pen: 0.1652 | G_loss: 0.6859
+Epoch 210 | 6.64s | cov: 0.879 | loc: 0.1173 | D_loss: 0.7576 | D_pen: 0.1666 | G_loss: 0.8375
+Epoch 217 | 6.45s | cov: 0.8772 | loc: 0.1168 | D_loss: 0.6351 | D_pen: 0.1682 | G_loss: 0.627
+Epoch 224 | 6.66s | cov: 0.8783 | loc: 0.118 | D_loss: 0.8248 | D_pen: 0.1693 | G_loss: 0.8641
+Epoch 231 | 6.49s | cov: 0.8775 | loc: 0.1176 | D_loss: 0.4169 | D_pen: 0.1707 | G_loss: 0.3452
+Epoch 238 | 6.64s | cov: 0.8756 | loc: 0.1174 | D_loss: 0.8403 | D_pen: 0.1717 | G_loss: 0.8603
+Epoch 245 | 6.87s | cov: 0.8747 | loc: 0.1167 | D_loss: 0.6022 | D_pen: 0.1728 | G_loss: 0.5838
+Epoch 252 | 6.99s | cov: 0.8739 | loc: 0.1173 | D_loss: 0.6627 | D_pen: 0.1738 | G_loss: 0.7173
+Epoch 259 | 6.86s | cov: 0.8746 | loc: 0.1177 | D_loss: 0.7177 | D_pen: 0.1749 | G_loss: 0.7849
+Epoch 266 | 7.09s | cov: 0.8741 | loc: 0.117 | D_loss: 0.365 | D_pen: 0.176 | G_loss: 0.2844
+Epoch 273 | 6.79s | cov: 0.8732 | loc: 0.1172 | D_loss: 0.4476 | D_pen: 0.1769 | G_loss: 0.4978
+Epoch 280 | 6.95s | cov: 0.8729 | loc: 0.1173 | D_loss: 0.6058 | D_pen: 0.1775 | G_loss: 0.6368
+Epoch 287 | 7.00s | cov: 0.8726 | loc: 0.1173 | D_loss: 0.0874 | D_pen: 0.1788 | G_loss: 0.1873
+Epoch 294 | 7.03s | cov: 0.8724 | loc: 0.1172 | D_loss: 0.6022 | D_pen: 0.1795 | G_loss: 0.5959
+Epoch 301 | 6.79s | cov: 0.8722 | loc: 0.1171 | D_loss: 0.7846 | D_pen: 0.1803 | G_loss: 0.8533
+Epoch 308 | 6.67s | cov: 0.8721 | loc: 0.1171 | D_loss: 0.5757 | D_pen: 0.181 | G_loss: 0.5953
+Epoch 315 | 6.56s | cov: 0.8721 | loc: 0.117 | D_loss: 0.675 | D_pen: 0.1815 | G_loss: 0.704
+Epoch 322 | 6.67s | cov: 0.8723 | loc: 0.1171 | D_loss: 0.7307 | D_pen: 0.1823 | G_loss: 0.7515
+Epoch 329 | 6.56s | cov: 0.8723 | loc: 0.1171 | D_loss: 0.6475 | D_pen: 0.1831 | G_loss: 0.7298
+Epoch 336 | 6.44s | cov: 0.8723 | loc: 0.117 | D_loss: 0.3361 | D_pen: 0.1837 | G_loss: 0.454
+Epoch 343 | 6.41s | cov: 0.8723 | loc: 0.117 | D_loss: 0.6719 | D_pen: 0.1844 | G_loss: 0.7315
+Epoch 350 | 6.44s | cov: 0.8722 | loc: 0.117 | D_loss: 0.559 | D_pen: 0.1851 | G_loss: 0.6137
+Epoch 357 | 6.38s | cov: 0.8721 | loc: 0.117 | D_loss: 0.064 | D_pen: 0.1857 | G_loss: 0.2838
+Epoch 364 | 6.80s | cov: 0.8722 | loc: 0.117 | D_loss: 0.5776 | D_pen: 0.1863 | G_loss: 0.6224
+Epoch 371 | 6.93s | cov: 0.8722 | loc: 0.117 | D_loss: 0.6303 | D_pen: 0.1868 | G_loss: 0.6904
+
+ sup_{h} K(P, P_hat; h) = 0.05488637089729309
+
+||mu_hat - mu||_2 = 0.11698328703641891
+||Sigma_hat - Sigma||_F = 0.8722056746482849
+||Sigma_hat - Sigma||_op = 0.24906009435653687
+||Sigma_hat - Sigma||_max = 0.03174924850463867
+
+
+-----
+config              NA
+session_info        1.0.0
+spline_gan          NA
+torch               2.0.1
+-----
+Python 3.11.3 (main, Apr 19 2023, 23:54:32) [GCC 11.2.0]
+Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+-----
+Session information updated at 2023-05-18 19:55
+None
